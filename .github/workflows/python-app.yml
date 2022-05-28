@@ -5,7 +5,7 @@ name: Unijobs API CI/CD
 
 on:
   push:
-    branches: [ main ]
+    branches: [ dev ]
 
 permissions:
   contents: read
