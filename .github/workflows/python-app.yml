@@ -42,10 +42,11 @@ jobs:
         pytest -v src/tests
         
   deploy-development:
-      name: Deploy Desenvolvimento CD
+      name: Deploy Desenvolvimento CD      
       runs-on: ubuntu-latest
       environment: 
         name: development
+        url: https://unijobs-dev.herokuapp.com/
       needs: build
       steps:
       - uses: actions/checkout@v2
