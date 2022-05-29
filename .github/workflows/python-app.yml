@@ -48,7 +48,7 @@ jobs:
       runs-on: ubuntu-latest
       environment: 
         name: development
-        url: https://unijobs-dev.herokuapp.com/
+        url: https://unijobs-dev.herokuapp.com/docs
       needs: build
       steps:
       - uses: actions/checkout@v2
