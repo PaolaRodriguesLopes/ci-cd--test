@@ -40,3 +40,13 @@ jobs:
     - name: Test with pytest
       run: |
         pytest -v src/tests
+        
+  deploy-development:
+      name: Deploy Desenvolvimento CD
+      runs-on: ubuntu-latest
+      environment: 
+        name: development
+      needs: build
+      steps:
+        - name: Run a one-line script
+          run: echo Deploy Dev
