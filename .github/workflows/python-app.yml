@@ -44,7 +44,7 @@ jobs:
         pytest -v src/tests
         
   deploy-development:
-      name: Deploy Desenvolvimento CD      
+      name: Deploy Desenvolvimento    
       runs-on: ubuntu-latest
       environment: 
         name: development
